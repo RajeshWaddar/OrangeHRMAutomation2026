@@ -2,35 +2,57 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-06T12:54:24 IST" name="Suite" finished-at="2026-01-06T12:54:45 IST" duration-ms="20984">
+  <suite started-at="2026-01-18T12:53:33 IST" name="Suite" finished-at="2026-01-18T12:53:48 IST" duration-ms="14392">
     <groups>
     </groups>
-    <test started-at="2026-01-06T12:54:24 IST" name="Test" finished-at="2026-01-06T12:54:45 IST" duration-ms="20984">
+    <test started-at="2026-01-18T12:53:33 IST" name="Test" finished-at="2026-01-18T12:53:48 IST" duration-ms="14392">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:24 IST" name="setUp" finished-at="2026-01-06T12:54:31 IST" duration-ms="6279" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:33 IST" name="setupReport" finished-at="2026-01-18T12:53:33 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:33 IST" name="setUp" finished-at="2026-01-18T12:53:39 IST" duration-ms="5507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_InValidLogin()[pri:1, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:31 IST" name="TC01_InValidLogin" finished-at="2026-01-06T12:54:35 IST" duration-ms="4670" status="PASS">
+        <test-method signature="TC01_loginwithValidCredential()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:39 IST" name="TC01_loginwithValidCredential" finished-at="2026-01-18T12:53:40 IST" duration-ms="984" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_InValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:35 IST" name="tearDown" finished-at="2026-01-06T12:54:36 IST" duration-ms="245" status="PASS">
+        </test-method> <!-- TC01_loginwithValidCredential -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:40 IST" name="tearDown" finished-at="2026-01-18T12:53:40 IST" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01_loginwithValidCredential status=SUCCESS method=LoginTest.TC01_loginwithValidCredential()[pri:0, instance:tests.LoginTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:36 IST" name="setUp" finished-at="2026-01-06T12:54:42 IST" duration-ms="6343" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:40 IST" name="setUp" finished-at="2026-01-18T12:53:45 IST" duration-ms="4669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC02_ValidLogin()[pri:2, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:42 IST" name="TC02_ValidLogin" finished-at="2026-01-06T12:54:45 IST" duration-ms="3193" status="PASS">
+        <test-method signature="TC02_loginwithInvalidCredential()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:45 IST" name="TC02_loginwithInvalidCredential" finished-at="2026-01-18T12:53:47 IST" duration-ms="2774" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02_ValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@2d1ef81a]" started-at="2026-01-06T12:54:45 IST" name="tearDown" finished-at="2026-01-06T12:54:45 IST" duration-ms="207" status="PASS">
+        </test-method> <!-- TC02_loginwithInvalidCredential -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:47 IST" name="tearDown" finished-at="2026-01-18T12:53:48 IST" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC02_loginwithInvalidCredential status=SUCCESS method=LoginTest.TC02_loginwithInvalidCredential()[pri:0, instance:tests.LoginTest@10683d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@10683d9d]" started-at="2026-01-18T12:53:48 IST" name="tearDownReport" finished-at="2026-01-18T12:53:48 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

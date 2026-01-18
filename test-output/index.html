@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="TC01_InValidLogin">TC01_InValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="TC01_loginwithValidCredential">TC01_loginwithValidCredential</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="TC02_ValidLogin">TC02_ValidLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="TC02_loginwithInvalidCredential">TC02_loginwithInvalidCredential</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,16 +131,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_InValidLogin">
-                  </a> <!-- TC01_InValidLogin -->
-                  <span class="method-name">TC01_InValidLogin</span>
+                  <a name="TC01_loginwithValidCredential">
+                  </a> <!-- TC01_loginwithValidCredential -->
+                  <span class="method-name">TC01_loginwithValidCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02_ValidLogin">
-                  </a> <!-- TC02_ValidLogin -->
-                  <span class="method-name">TC02_ValidLogin</span>
+                  <a name="TC02_loginwithInvalidCredential">
+                  </a> <!-- TC02_loginwithInvalidCredential -->
+                  <span class="method-name">TC02_loginwithInvalidCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,7 +157,6 @@
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;base.BaseTest&quot;/&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -172,7 +171,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,18 +199,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC01_InValidLogin')
+data.setCell(0, 1, 'TC02_loginwithInvalidCredential')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 4670);
+data.setCell(0, 3, 2774);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC02_ValidLogin')
+data.setCell(1, 1, 'TC01_loginwithValidCredential')
 data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 3193);
+data.setCell(1, 3, 984);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,30 +237,38 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">245 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC01_InValidLogin</span>
-                <span class="method-start">6280 ms</span>
+                <span class="method-name">TC01_loginwithValidCredential</span>
+                <span class="method-start">5752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">10953 ms</span>
+                <span class="method-name">tearDown([TestResult name=TC01_loginwithValidCredential status=SUCCESS method=LoginTest.TC01_loginwithValidCr...)</span>
+                <span class="method-start">6744 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11200 ms</span>
+                <span class="method-start">6957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC02_ValidLogin</span>
-                <span class="method-start">17543 ms</span>
+                <span class="method-name">TC02_loginwithInvalidCredential</span>
+                <span class="method-start">11626 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20739 ms</span>
+                <span class="method-name">tearDown([TestResult name=TC02_loginwithInvalidCredential status=SUCCESS method=LoginTest.TC02_loginwithInval...)</span>
+                <span class="method-start">14400 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">14631 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

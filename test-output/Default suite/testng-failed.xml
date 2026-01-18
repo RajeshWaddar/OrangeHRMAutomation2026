@@ -7,7 +7,9 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="TC01_ValidLogin"/>
+          <include name="setupReport"/>
+          <include name="TC01_loginwithValidCredential"/>
+          <include name="tearDownReport"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>
